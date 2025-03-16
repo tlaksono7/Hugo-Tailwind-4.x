@@ -15,7 +15,7 @@ This is a md paragraph.
 - List md item 2
 
 {{< rawhtml >}}
-<div class="text-5xl text-purple-700 bg-yellow-100">
+<div class="text-5xl p-10 m-10 text-purple-700 bg-yellow-100 border-4 rounded-3xl drop-shadow-2xl">
 
 Tailwind works too...
 
