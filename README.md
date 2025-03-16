@@ -22,3 +22,4 @@ To get out of server mode you need to do **Ctrl+c**
 * I finally updated to the latest TailwindCSS 4.0.14
 * I removed `concurrently` and just use `hugo server`, does not really makes a difference though
 * Removed `autoprefixer` and `postcss`, seems they are no longer required
+* Note that the one content running at localhost:1313/new *.md is minimal and ugly. But it shows md and TailwindCSS rendering
