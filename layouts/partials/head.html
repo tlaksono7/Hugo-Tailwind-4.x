@@ -1,12 +1,30 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    @keyframes float {
 
-{{ $styles := resources.Get "/css/style.css"  }}
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .float-animation {
+        animation: float 3s ease-in-out infinite;
+    }
+</style>
+{{ $styles := resources.Get "/css/style.css" }}
 
 {{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
-  {{ $styles := $styles | minify   }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ $styles := $styles | minify }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ end }}

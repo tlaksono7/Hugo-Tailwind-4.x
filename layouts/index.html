@@ -1,9 +1,341 @@
 {{ define "main" }}
-<main class="container mx-auto px-4 py-24 bg-gray-100">
-    <h1 class="text-3xl underline decoration-pink-500" >Welcome to Hugo with Tailwind CSS</h1>
-    <div class="text-blue-500 text-2xl">This is an example site with TailwindCSS 3.0</div>
-    <div class="text-cyan-700 text-6xl ">This is 6xl in Cyan</div>
-    <div class="text-orange-800 text-4xl ">
-Just added, an example page with some @tailwindcss/typography stylings for markdown -> <a class="text-indigo-400 hover:text-indigo-700 font-bold" href="/prose/"]>/prose/</a>.    </div>
-</main>
+    <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-sky-50 to-white z-0"></div>
+    <div class="container mx-auto px-6 py-20 md:py-32 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                Buat <span class="text-sky-600">Resume Sempurna</span> Anda dalam Hitungan Menit
+            </h1>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                Tampil menonjol dengan template resume profesional yang dirancang khusus untuk setiap peluang kerja.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <a href="#" class="px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-semibold transition shadow-lg shadow-sky-200 hover:shadow-sky-300">
+                    Buat Resume Anda - Gratis
+                </a>
+                <!--
+                <a href="#" class="flex items-center text-gray-600 hover:text-gray-600 group transition">
+                    <span class="mr-2">Bagaimana Cara Kerjanya</span>
+                    <i class="fas fa-play-circle text-sky-500 group-hover:text-gray-600 transition"></i>
+                </a>
+                -->
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-500">
+                <div class="flex -space-x-2">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Pengguna">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Pengguna">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Pengguna">
+                </div>
+                <span>Dipercaya oleh <span class="font-semibold text-gray-700">25.000+</span> profesional</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-sky-600 bg-sky-50 rounded-full mb-4">FEATURES</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Everything you need to land your dream job</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our resume builder provides all the tools to create a professional resume that gets noticed.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-lg bg-sky-50 flex items-center justify-center text-sky-500 mb-6">
+                        <i class="fas fa-magic text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Smart Design Templates</h3>
+                    <p class="text-gray-600">Choose from dozens of professionally designed templates that pass applicant tracking systems.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-lg bg-sky-50 flex items-center justify-center text-sky-500 mb-6">
+                        <i class="fas fa-robot text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">AI-Powered Suggestions</h3>
+                    <p class="text-gray-600">Get real-time suggestions to improve your resume based on your target job title.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-lg bg-sky-50 flex items-center justify-center text-sky-500 mb-6">
+                        <i class="fas fa-file-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Multiple Format Export</h3>
+                    <p class="text-gray-600">Download your resume as PDF, Word, or plain text. Perfect for any application system.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-lg bg-sky-50 flex items-center justify-center text-sky-500 mb-6">
+                        <i class="fas fa-search text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">ATS Optimization</h3>
+                    <p class="text-gray-600">Our resumes are designed to pass through Applicant Tracking Systems with flying colors.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-lg bg-sky-50 flex items-center justify-center text-sky-500 mb-6">
+                        <i class="fas fa-history text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Version History</h3>
+                    <p class="text-gray-600">Save unlimited versions of your resume and revert to any previous version at any time.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-lg bg-sky-50 flex items-center justify-center text-sky-500 mb-6">
+                        <i class="fas fa-lock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Privacy Focused</h3>
+                    <p class="text-gray-600">Your data is yours alone. We don't sell or share your personal information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-sky-600 bg-sky-50 rounded-full mb-4">CARA KERJANYA</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Buat Resume Sempurna Kamu dalam 3 Langkah Mudah</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Bikin resume profesional sekarang jadi gampang banget.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Langkah 1 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center">
+                    <div class="w-16 h-16 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold text-2xl mx-auto mb-6">1</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Isi Data Diri</h3>
+                    <p class="text-gray-600 mb-4">Masukkan pengalaman kerja, pendidikan, dan skill kamu. Form kami memudahkan kamu mengisinya dengan cepat.</p>
+                    <div class="w-24 h-1 bg-sky-100 mx-auto"></div>
+                </div>
+                
+                <!-- Langkah 2 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center relative">
+                    <div class="w-16 h-16 rounded-full bg-sky-600 flex items-center justify-center text-white font-bold text-2xl mx-auto mb-6">2</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Pilih Template</h3>
+                    <p class="text-gray-600 mb-4">Pilih dari berbagai template modern dan ramah ATS yang didesain oleh para profesional.</p>
+                    <div class="w-24 h-1 bg-sky-100 mx-auto"></div>
+                </div>
+                
+                <!-- Langkah 3 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center">
+                    <div class="w-16 h-16 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold text-2xl mx-auto mb-6">3</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Unduh & Lamar</h3>
+                    <p class="text-gray-600 mb-4">Unduh resume kamu dan mulai lamar pekerjaan dengan percaya diri.</p>
+                    <div class="w-24 h-1 bg-sky-100 mx-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-sky-600 bg-sky-50 rounded-full mb-4">TESTIMONI</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Dipercaya oleh para profesional di seluruh dunia</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Jangan hanya percaya kata kami. Berikut apa yang dikatakan oleh para pengguna kami.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full mr-4" alt="Sarah Johnson">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-sky-500 text-sm">Direktur Pemasaran</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Saya mendapatkan 3 panggilan wawancara dalam minggu pertama setelah menggunakan ResumeCraft. Template-nya sangat profesional dan optimasi ATS-nya benar-benar bekerja!"</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 2 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full mr-4" alt="Michael Chen">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Michael Chen</h4>
+                            <p class="text-sky-500 text-sm">Insinyur Perangkat Lunak</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Sebagai seorang developer, saya benci menghabiskan waktu untuk mengatur format. ResumeCraft menghemat waktu saya berjam-jam dan membantu saya dilirik oleh perusahaan teknologi ternama."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 3 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-12 h-12 rounded-full mr-4" alt="Jessica Williams">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Jessica Williams</h4>
+                            <p class="text-sky-500 text-sm">Lulusan Baru</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Saya kesulitan mendapatkan panggilan balik dengan CV buatan sendiri. ResumeCraft membantu saya membuat CV yang tampak profesional dan akhirnya saya mendapatkan pekerjaan pertama saya!"</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-sky-600 bg-sky-50 rounded-full mb-4">HARGA</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Harga simpel dan transparan</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Mulai secara gratis dan upgrade kapan pun kamu butuh fitur tambahan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Paket Gratis -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Gratis</h3>
+                    <p class="text-gray-600 mb-6">Cocok untuk kamu yang baru mulai</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-gray-900">$0</span>
+                        <span class="text-sky-500">/selamanya</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>1 Template CV</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Download PDF</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Cek ATS Dasar</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times text-gray-300 mr-2"></i>
+                            <span>Versi CV Lebih dari Satu</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times text-gray-300 mr-2"></i>
+                            <span>Surat Lamaran (Cover Letter)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-6 text-center rounded-lg border border-gray-300 text-gray-700 font-medium hover:border-gray-400 transition">Mulai Sekarang</a>
+                </div>
+
+                <!-- Paket Profesional -->
+                <div class="bg-white p-8 rounded-xl border-2 border-sky-500 shadow-lg relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-sky-500 text-white text-sm font-bold rounded-full">Paling Populer</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Profesional</h3>
+                    <p class="text-gray-600 mb-6">Untuk pencari kerja yang serius</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-gray-900">$9</span>
+                        <span class="text-sky-500">/bulan</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Semua Template CV</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Ekspor PDF, Word, dan Teks</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Cek ATS Lanjutan</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Versi Tak Terbatas</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Surat Lamaran (Cover Letter)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-6 text-center rounded-lg bg-sky-500 hover:bg-sky-600 text-white font-medium transition shadow-md">Pilih Profesional</a>
+                </div>
+
+                <!-- Paket Premium -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Premium</h3>
+                    <p class="text-gray-600 mb-6">Untuk para profesional karier</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-gray-900">$29</span>
+                        <span class="text-sky-500">/bulan</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Semua Fitur Profesional</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Konsultasi Karier 1:1</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Review Profil LinkedIn</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Persiapan Wawancara</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Dukungan Prioritas</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-6 text-center rounded-lg border border-gray-300 text-gray-700 font-medium hover:border-gray-400 transition">Pilih Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-sky-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to land your dream job?</h2>
+                <p class="text-xl text-gray-100 mb-10 max-w-2xl mx-auto">Join thousands of professionals who've accelerated their careers with ResumeCraft.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#" class="px-8 py-4 rounded-xl bg-white hover:bg-gray-100 text-gray-600 font-semibold transition shadow-lg">
+                        Create Your Resume - It's Free
+                    </a>
+                    <a href="#" class="px-8 py-4 rounded-xl border-2 border-white/30 hover:border-white/50 text-white font-semibold transition">
+                        See All Templates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {{ end }}

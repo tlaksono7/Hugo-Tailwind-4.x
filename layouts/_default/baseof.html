@@ -1,22 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ .Site.Title }}</title>
-  {{ partialCached "css.html" . }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    {{ partialCached "css.html" . }}
 </head>
-<body>
-  <header>
-    <h1>{{ .Site.Title }}</h1>
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    <!--
-    <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
-    -->
-  </footer>
+
+<body class="font-sans antialiased text-gray-800 bg-white">
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-sky-500 flex items-center justify-center text-white font-bold text-xl">
+                        R
+                    </div>
+                    <span class="ml-3 text-xl font-bold text-gray-900">Resuma<span
+                            class="text-sky-600">.id</span></span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-sky-600 transition">Fitur</a>
+                    <a href="#" class="text-gray-600 hover:text-sky-600 transition">Cara Kerja</a>
+                    <a href="#" class="text-gray-600 hover:text-sky-600 transition">Template</a>
+                    <a href="#" class="text-gray-600 hover:text-sky-600 transition">Harga</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="#"
+                        class="px-5 py-2 rounded-lg bg-sky-500 hover:bg-sky-600 text-white font-medium transition shadow-sm shadow-sky-200 hover:shadow-md">
+                        Mulai Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Logo dan deskripsi -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-sky-500 flex items-center justify-center text-white font-bold text-xl">
+                            R
+                        </div>
+                        <span class="ml-3 text-xl font-bold text-white">Resuma<span class="text-sky-400">.id</span></span>
+                    </div>
+                    <p class="mb-6">Pembuat CV modern yang membantu kamu tampil menonjol dan lebih cepat diterima kerja.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Link Produk -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-6">Produk</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">Fitur</a></li>
+                        <li><a href="#" class="hover:text-white transition">Template</a></li>
+                        <li><a href="#" class="hover:text-white transition">Harga</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contoh</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pembaruan</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Link Sumber Daya -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-6">Sumber Daya</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pusat Bantuan</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tutorial</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tips CV</a></li>
+                        <li><a href="#" class="hover:text-white transition">Saran Karier</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Link Perusahaan -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-6">Perusahaan</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karier</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-white transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-16 pt-10 flex flex-col md:flex-row justify-between items-center">
+                <p>© 2023 ResumeCraft. Seluruh hak cipta dilindungi.</p>
+                <div class="flex space-x-6 mt-6 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-white transition">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
